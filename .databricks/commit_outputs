@@ -16,3 +16,6 @@
  
 stackoverflow questions 0.ipynb
 !stackoverflow-questions.ipynb
+notebooks/03_gold_aggregate.ipynb
+notebooks/02_silver_transform.ipynb
+notebooks/01_bronze_ingest.ipynb
