@@ -21,19 +21,4 @@
 
 ### Gold (multiple tables)
 - Business-specific aggregations
-- Examples: monthly trends, tag statistics, top questions
-
-## Ingestion Process
-```python
-# 1. Parallel fetch (10 workers, 900 pages)
-fetch_and_write_parallel(
-    pages=range(1, 901),
-    table_name="bronze.questions",
-    max_workers=10
-)
-
-# 2. Optimization
-OPTIMIZE bronze.questions ZORDER BY (creation_period, question_id)
-
-# 3. Transform to Silver
-# Type conversion, cleaning, deduplication
+- Example: monthly trends
